@@ -6,7 +6,7 @@ from keras import optimizers
 import matplotlib.pyplot as plt
 
 # directory of training dataset
-dir = 'advance_train/'
+dir = 'train/'
 
 # obtain preprocess training data
 x,y = rd.get_data(dir, addition=True, adjustment=0.2)
@@ -30,8 +30,6 @@ model.add(Conv2D(64,3,3,activation='relu'))
 model.add(Conv2D(64,3,3,activation='relu'))
 # fully connected layer
 model.add(Flatten())
-if len(dir) > 7:
-    model.add(Dropout(0.6))
 # fc with 100 ouput units
 model.add(Dense(100))
 # fc with 50 output units
@@ -42,7 +40,7 @@ model.add(Dense(10))
 model.add(Dense(1))
 
 # compile model using adam optimizer with learning rate of 0.0001 wiht no decay
-adam = optimizers.Adam(lr=0.0001, decay=1e-6)
+adam = optimizers.Adam(lr=0.0001)
 model.compile(loss='mean_squared_error', optimizer=adam)
 model.fit(x_aug, y_aug, epochs=10, validation_split=0.2, shuffle=True)
 
