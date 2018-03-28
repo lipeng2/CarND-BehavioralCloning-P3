@@ -18,7 +18,7 @@ The project is to train a convolutional neural network (CNN) to learn driving in
 
 ### Model overview
 * The trained model implemented in [model.py](https://github.com/lipeng2/CarND-BehavioralCloning-P3/blob/master/model.py) is proposed by the paper [End to End Learning for Self-Driving Cars](https://images.nvidia.com/content/tegra/automotive/images/2016/solutions/pdf/end-to-end-dl-using-px.pdf). 
-* It consists of 9 layers, including a normalization layer, 5 convolutional layers with relu activation functions, and 3 fully connected layers. The convolutional layers are designed for feature extraction. 
+* It consists of 9 layers, including a normalization layer, a cropping layer, 5 convolutional layers with relu activation functions, and 3 fully connected layers. The convolutional layers are designed for feature extraction. 
 * The first three convolutional layers use 5x5 kernels and 2x2 strides, and the last two convolutional layers use 3x3 kernels with no stride. 
 * Following convolutional layers, 3 fully connected layers are implemented to introduce nonlinearity into the model. 
 
