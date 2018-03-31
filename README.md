@@ -8,7 +8,12 @@ conda env create -f environment-gpu.yml
 You will also required to download a [simulator](https://github.com/udacity/self-driving-car-sim) created by udacity and Nvidia team for this project. The simulator is used for creating training data and running testing simulation. 
 
 ## Overview 
-The project is to train a convolutional neural network (CNN) to learn driving in traffic on local roads with or without lane markings. The input is a series of images taken from 3 front facing cameras positioned in the front of a vehicle, and the output of the model is steering command. 
+The project is to train a convolutional neural network (CNN) to learn driving in traffic on local roads with or without lane markings. The input is a series of images taken from 3 front facing cameras positioned in the front of a vehicle, and the output of the model is steering command. Sample images obtained from 3 cameras that positioned in different angles(from left to right) shown below. 
+<p float="left">
+  <img src="https://github.com/lipeng2/CarND-BehavioralCloning-P3/blob/master/train_examples/left_2018_03_29_10_59_08_399.jpg" width="250" />
+  <img src="https://github.com/lipeng2/CarND-BehavioralCloning-P3/blob/master/train_examples/center_2018_03_29_10_59_08_399.jpg" width="250" /> 
+  <img src="https://github.com/lipeng2/CarND-BehavioralCloning-P3/blob/master/train_examples/right_2018_03_29_10_59_08_399.jpg" width="250" />
+</p>
 
 ### The steps of this project are the following:
 * Use the simulator to collect data of good driving behavior
