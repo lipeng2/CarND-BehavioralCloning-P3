@@ -34,4 +34,4 @@ The project is to train a convolutional neural network (CNN) to learn driving in
   2. Employ dropout techniques
   
 ### Result
-The [result](https://github.com/lipeng2/CarND-BehavioralCloning-P3/blob/master/run_track1.mp4) is produced and stored in a video format using [video.py][https://github.com/lipeng2/CarND-BehavioralCloning-P3/blob/master/video.py]. 
+The [result](https://github.com/lipeng2/CarND-BehavioralCloning-P3/blob/master/run_track1.mp4) is produced and stored in a video format using [video.py](https://github.com/lipeng2/CarND-BehavioralCloning-P3/blob/master/video.py). 
